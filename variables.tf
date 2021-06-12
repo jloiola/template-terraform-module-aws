@@ -1,6 +1,10 @@
-variable "var_example" {
- type        = string
- description = "Variable example"
- default     = "example"
+variable "name" {
+  type        = string
+  description = "Name"
 }
 
+variable "tags" {
+  type        = map(string)
+  description = "Tags"
+  default     = {}
+}
